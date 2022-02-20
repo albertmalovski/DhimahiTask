@@ -15,10 +15,11 @@ namespace Infrastructure.Data
         {
             dbContext = context;  
         }
-        public async Task<bool> Create(Language entity)
+        public async Task<int> Create(Language entity)
         {
             await dbContext.Languages.AddAsync(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
         public async Task<bool> Delete(Language entity)
@@ -35,7 +36,7 @@ namespace Infrastructure.Data
 
         public async Task<Language> FindById(int id)
         {
-            var com = await dbContext.Languages.FindAsync(id);
+            var com = await dbContext.Languages.FirstOrDefaultAsync(c=>c.Id == id);
             return com;
         }
         public async Task<bool> Save()
@@ -44,10 +45,11 @@ namespace Infrastructure.Data
             return changes > 0;
         }
 
-        public async Task<bool> Update(Language entity)
+        public async Task<int> Update(Language entity)
         {
             dbContext.Languages.Update(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
 

@@ -15,10 +15,11 @@ namespace Infrastructure.Data
         {
             dbContext = context;  
         }
-        public async Task<bool> Create(Currency entity)
+        public async Task<int> Create(Currency entity)
         {
             await dbContext.Currencies.AddAsync(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
         public async Task<bool> Delete(Currency entity)
@@ -44,10 +45,11 @@ namespace Infrastructure.Data
             return changes > 0;
         }
 
-        public async Task<bool> Update(Currency entity)
+        public async Task<int> Update(Currency entity)
         {
             dbContext.Currencies.Update(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
 

@@ -7106,11 +7106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\ProAnimaxAPI\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\ProAnimaxAPI\\API.csproj",
+      "projectPath": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Albert\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\ProAnimaxAPI\\obj\\",
+      "outputPath": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Albert\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J7ZF6CGhfvdripb/iIR2w4UooWfBNWg/F+sCyuhrPLdEajU2XCReoEcb/gc5azI8kTj0RMH4ujmAjfNAEan0BQ==",
+  "dgSpecHash": "6q1qzZ3Fezke7e66eEgsTbO8Uz65+CdulcG3ReWHIgGR62Z1dArxQBf8l9D0pMdxqY9ykMt9jyfkNwc2N320rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\ProAnimaxAPI\\API.csproj",
+  "projectFilePath": "C:\\Users\\Albert\\Desktop\\DhimahiTask\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Albert\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Albert\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

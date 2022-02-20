@@ -17,10 +17,11 @@ namespace Infrastructure.Data
         {
             dbContext = context;  
         }
-        public async Task<bool> Create(Country entity)
+        public async Task<int> Create(Country entity)
         {
             await dbContext.Countries.AddAsync(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
         public async Task<bool> Delete(Country entity)
@@ -31,14 +32,14 @@ namespace Infrastructure.Data
 
         public async Task<ICollection<Country>> FindAll()
         {
-            var brands = await dbContext.Countries.ToListAsync();
-            return brands;
+            var country = await dbContext.Countries.ToListAsync();
+            return country;
         }
 
         public async Task<Country> FindById(int id)
         {
-            var brands = await dbContext.Countries.FindAsync(id);
-            return brands;
+            var country = await dbContext.Countries.FirstOrDefaultAsync(c => c.Id == id);
+            return country;
         }
         public async Task<bool> Save()
         {
@@ -46,10 +47,11 @@ namespace Infrastructure.Data
             return changes > 0;
         }
 
-        public async Task<bool> Update(Country entity)
+        public async Task<int> Update(Country entity)
         {
             dbContext.Countries.Update(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
         public async Task<Country> FindByCode(string Code)
         {
@@ -62,6 +64,11 @@ namespace Infrastructure.Data
         {
             var exist = await dbContext.Countries.AnyAsync(q => q.Id == id);
             return exist;
+        }
+
+        public async Task<List<Country>> FindByContientID(int ContinentID)
+        {
+            return await (dbContext.Countries.Where(c => c.ContinentId == ContinentID).ToListAsync());
         }
     }
 }

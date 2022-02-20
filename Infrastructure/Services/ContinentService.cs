@@ -18,5 +18,24 @@ namespace Infrastructure.Services
         {
             return continentRepository.FindByCode(Code);
         }
+        public async Task<int> CreateOrUpdate(string Code, string Name)
+        {
+            Task<Continent> continent = continentRepository.FindByCode(Code);
+            if (continent != null && continent.Result != null)
+            {
+                continent.Result.UpdateAt = System.DateTime.Now;
+                continent.Result.Name = Name;
+                return await continentRepository.Update(continent.Result);
+            }
+            else
+            {
+                Continent NewCont = new Continent();
+                NewCont.CreatedAt = System.DateTime.Now;
+                NewCont.Code = Code;
+                NewCont.Name = Name;
+                return await continentRepository.Create(NewCont);
+            }
+        }
+
     }
 }

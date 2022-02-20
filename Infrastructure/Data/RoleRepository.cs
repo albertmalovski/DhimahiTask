@@ -62,5 +62,15 @@ namespace Infrastructure.Data
         {
             throw new NotImplementedException();
         }
+
+        Task<int> IGenericRepository<StoreRoles>.Create(StoreRoles entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<int> IGenericRepository<StoreRoles>.Update(StoreRoles entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

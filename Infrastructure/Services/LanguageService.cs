@@ -14,22 +14,23 @@ namespace Infrastructure.Services
             this.languageRepository = languageRepository;
         }
 
-        public async Task<Language> CreateOrUpdate(string Code, string Name)
+        public async Task<int> CreateOrUpdate(string Code, string Name)
         {
             Task<Language> language = languageRepository.FindByCode(Code);
             if (language != null && language.Result != null)
             {
                 language.Result.UpdateAt = System.DateTime.Now;
                 language.Result.Name = Name;
+                return await languageRepository.Update(language.Result);
             }
             else
             {
-
-                language.Result.CreatedAt = System.DateTime.Now;
-                language.Result.ISOCode = Code;
-                language.Result.Name = Name;
+                Language NewLang = new Language();
+                NewLang.CreatedAt = System.DateTime.Now;
+                NewLang.ISOCode = Code;
+                NewLang.Name = Name;
+                return await languageRepository.Create(NewLang);
             }
-            return await language;
         }
 
         public Task<Language> GetByCode(string Code)

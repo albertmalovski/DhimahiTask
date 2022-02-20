@@ -21,10 +21,11 @@ namespace Infrastructure.Data
         {
             dbContext = context;  
         }
-        public async Task<bool> Create(Continent entity)
+        public async Task<int> Create(Continent entity)
         {
             await dbContext.Continents.AddAsync(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
         public async Task<bool> Delete(Continent entity)
@@ -50,10 +51,11 @@ namespace Infrastructure.Data
             return changes > 0;
         }
 
-        public async Task<bool> Update(Continent entity)
+        public async Task<int> Update(Continent entity)
         {
             dbContext.Continents.Update(entity);
-            return await Save();
+            await Save();
+            return entity.Id;
         }
 
         public async Task<Continent> GetCompanyByNUISAsync(int companyNuis)
