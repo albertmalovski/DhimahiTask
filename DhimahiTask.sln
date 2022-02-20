@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{D062ED3B-D3B7-40AD-AC1A-1FA25AE0D0DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{39EA6E66-CA6C-4AA9-BCB0-42E9E739CF6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "ProAnimaxAPI\API.csproj", "{DCE0A7F2-46FB-4AF9-BCE1-E9BB3F8E7D7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D062ED3B-D3B7-40AD-AC1A-1FA25AE0D0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D062ED3B-D3B7-40AD-AC1A-1FA25AE0D0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D062ED3B-D3B7-40AD-AC1A-1FA25AE0D0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D062ED3B-D3B7-40AD-AC1A-1FA25AE0D0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39EA6E66-CA6C-4AA9-BCB0-42E9E739CF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39EA6E66-CA6C-4AA9-BCB0-42E9E739CF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39EA6E66-CA6C-4AA9-BCB0-42E9E739CF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39EA6E66-CA6C-4AA9-BCB0-42E9E739CF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE0A7F2-46FB-4AF9-BCE1-E9BB3F8E7D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE0A7F2-46FB-4AF9-BCE1-E9BB3F8E7D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE0A7F2-46FB-4AF9-BCE1-E9BB3F8E7D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE0A7F2-46FB-4AF9-BCE1-E9BB3F8E7D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C69A2DD5-A7E5-49AA-86DF-32AA566AA0CA}
+	EndGlobalSection
+EndGlobal
