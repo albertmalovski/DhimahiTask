@@ -32,7 +32,7 @@ namespace Infrastructure.Data
                    await context.SaveChangesAsync();
                 }
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 var logger = loggerFactory.CreateLogger<AppDbContextSeed>();
                 logger.LogError(ex.Message);

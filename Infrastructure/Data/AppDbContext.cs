@@ -24,6 +24,7 @@ namespace Infrastructure.Data
 		public DbSet<Currency> Currencies { get; set; }
 		public DbSet<Continent> Continents { get; set; }
 		public DbSet<Language> Languages { get; set; }
+		public DbSet<CountryLanguage> CountryLanguage { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

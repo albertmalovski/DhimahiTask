@@ -38,7 +38,7 @@ namespace Infrastructure.Data
 
         public async Task<Country> FindById(int id)
         {
-            var country = await dbContext.Countries.FirstOrDefaultAsync(c => c.Id == id);
+            var country = await dbContext.Countries.Where(c => c.Id == id).Include(c => c.CountryLanguage).FirstOrDefaultAsync();
             return country;
         }
         public async Task<bool> Save()
@@ -68,7 +68,9 @@ namespace Infrastructure.Data
 
         public async Task<List<Country>> FindByContientID(int ContinentID)
         {
-            return await (dbContext.Countries.Where(c => c.ContinentId == ContinentID).ToListAsync());
+            return await (dbContext.Countries.Where(c => c.ContinentId == ContinentID)
+                .Include(c => c.CountryLanguage).ThenInclude(l => l.Language)
+                .ToListAsync());
         }
     }
 }

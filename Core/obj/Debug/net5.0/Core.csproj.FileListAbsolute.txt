@@ -9,6 +9,7 @@ C:\Users\Albert\Desktop\DhimahiTask\Core\bin\Debug\net5.0\Core.runtimeconfig.dev
 C:\Users\Albert\Desktop\DhimahiTask\Core\bin\Debug\net5.0\Core.dll
 C:\Users\Albert\Desktop\DhimahiTask\Core\bin\Debug\net5.0\ref\Core.dll
 C:\Users\Albert\Desktop\DhimahiTask\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
 C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
 C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
@@ -17,4 +18,3 @@ C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.dll
 C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.pdb
 C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
-C:\Users\Albert\Desktop\DhimahiTask\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache

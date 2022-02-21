@@ -36,7 +36,7 @@ namespace Infrastructure.Data.SeedData
                     if (!create.Succeeded)
                     {
 
-                        throw new Exception("Failed to create role");
+                        throw new System.Exception("Failed to create role");
                     }
                 }
         }
